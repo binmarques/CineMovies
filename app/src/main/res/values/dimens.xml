@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_16dp">16dp</dimen>
+    <dimen name="dimen_24dp">24dp</dimen>
+    <dimen name="dimen_8dp">8dp</dimen>
+    <dimen name="dimen_6dp">6dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_86dp">86dp</dimen>
+    <dimen name="dimen_10dp">10dp</dimen>
+    <dimen name="dimen_poster_thumb_width">110dp</dimen>
+    <dimen name="dimen_poster_thumb_height">140dp</dimen>
+    <dimen name="dimen_poster_card_width">106dp</dimen>
+    <dimen name="dimen_poster_card_height">230dp</dimen>
+    <dimen name="dimen_featured">206dp</dimen>
+    <dimen name="detail_backdrop_height">256dp</dimen>
+    <dimen name="detail_backdrop_height_medium">170dp</dimen>
+    <dimen name="dimen_160dp">160dp</dimen>
+    <dimen name="dimen_trailer_card_width">225dp</dimen>
+    <dimen name="dimen_trailer_card_height">175dp</dimen>
+    <dimen name="dimen_90dp">90dp</dimen>
+    <dimen name="dimen_width_stroke">1.5dp</dimen>
+</resources>

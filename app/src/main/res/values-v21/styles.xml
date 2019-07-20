@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:colorEdgeEffect">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <style name="AppTheme.CollapsingToolbarLayoutCollapsedTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.CollapsingToolbarLayoutExpandedTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.TextViewDetails" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">@color/background</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+    </style>
+
+    <style name="AppTheme.AlertDialogCustom" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="shapeAppearance">@style/ShapeAppearance.MyApp.MediumComponent</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="suggestionRowLayout">@layout/my_suggestions_row_layout</item>
+    </style>
+
+    <style name="AppTheme.CardViewMovieTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.TextViewChip" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/background</item>
+        <item name="android:layout_marginStart">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.MyApp.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

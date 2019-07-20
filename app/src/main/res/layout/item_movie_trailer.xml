@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:background="@color/layoutBackground">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardViewTrailer"
+        android:layout_width="@dimen/dimen_trailer_card_width"
+        android:layout_height="@dimen/dimen_trailer_card_height"
+        android:layout_marginLeft="@dimen/dimen_4dp"
+        android:layout_marginRight="@dimen/dimen_4dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:strokeColor="@color/background"
+        app:strokeWidth="@dimen/dimen_width_stroke">
+
+        <ImageView
+            android:id="@+id/imgTrailer"
+            android:layout_width="@dimen/dimen_trailer_card_width"
+            android:layout_height="@dimen/dimen_trailer_card_height"
+            android:background="@color/cardBackground"
+            android:contentDescription="@string/img_trailer_description" />
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center|center_horizontal"
+            android:contentDescription="@string/img_trailer_description"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_play_trailer" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/tvTrailerName"
+        style="@style/AppTheme.CardViewMovieTitle"
+        android:layout_width="@dimen/dimen_trailer_card_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="@dimen/dimen_8dp"
+        tools:text="Trailer name" />
+
+</LinearLayout>
+
+
+

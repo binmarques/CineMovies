@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvLogo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:gravity="center"
+    android:text="@string/app_name"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    android:textColor="@color/colorAccent"
+    android:textSize="40sp" />

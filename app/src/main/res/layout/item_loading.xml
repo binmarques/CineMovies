@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/layoutBackground">
+
+    <ProgressBar
+        android:id="@+id/loadMoreProgress"
+        style="@style/AppTheme.MyCircularProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/loadMoreError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgLoadMoreRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:background="@drawable/background_circle"
+            android:contentDescription="@string/img_reload_description"
+            android:padding="@dimen/dimen_8dp"
+            app:srcCompat="@drawable/ic_refresh"
+            tools:targetApi="lollipop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLoadMoreError"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_fail_loading"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tap_to_reload"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_scrollFlags="enterAlways|scroll|snap"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                style="@style/AppTheme.MySearchViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearch"
+        style="@style/AppTheme.MyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <include layout="@layout/content_empty_view" />
+
+    <include
+        layout="@layout/content_loading_progress"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

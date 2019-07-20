@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    android:elevation="4dp"
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|snap|enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:titleTextAppearance="@style/AppTheme.ToolbarTitle"
+    tools:ignore="UnusedAttribute" />

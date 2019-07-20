@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewMovie"
+    android:layout_width="@dimen/dimen_poster_card_width"
+    android:layout_height="@dimen/dimen_poster_card_height"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="@dimen/dimen_4dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="@dimen/dimen_poster_thumb_width"
+            android:layout_height="@dimen/dimen_poster_thumb_height"
+            android:contentDescription="@string/movie_poster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            style="@style/AppTheme.CardViewMovieTitle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="@dimen/dimen_8dp"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:paddingRight="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toTopOf="@+id/tvYear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/moviePoster"
+            tools:text="Avengers: Infinity War" />
+
+        <TextView
+            android:id="@+id/tvVoteAverage"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:drawableEnd="@drawable/ic_star_14dp"
+            android:drawableRight="@drawable/ic_star_14dp"
+            android:drawablePadding="@dimen/dimen_6dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            tools:text="4,6" />
+
+        <TextView
+            android:id="@+id/tvYear"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toEndOf="@+id/tvVoteAverage"
+            android:layout_toRightOf="@+id/tvVoteAverage"
+            android:gravity="center_vertical"
+            android:textColor="@color/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toEndOf="@+id/tvVoteAverage"
+            app:layout_constraintTop_toBottomOf="@+id/tvMovieTitle"
+            tools:text="2018" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CineMovies</string>
+    <string name="title_nothing_show">Oops!\nNenhum filme encontrado.</string>
+    <string name="title_fail">Oops!\n</string>
+    <string name="title_fail_loading">Oops! Algo de errado ocorreu.</string>
+    <string name="connection_failed_to_network">Falha ao se conectar! Certifique-se de estar conectado com a internet e tente novamente.</string>
+    <string name="connection_failed_to_network_snackbar">Sem conexão! Estabeleça conexão e tente novamente.</string>
+    <string name="title_retry">Tente Novamente</string>
+    <string name="text_cancel">Cancelar</string>
+    <string name="title_retry_snackbar">Repetir</string>
+    <string name="tap_to_reload">Toque para recarregar</string>
+    <string name="placeholder_description">placeholder</string>
+    <string name="img_reload_description">Imagem de recarregamento dos filmes</string>
+    <string name="movie_poster">Poster do filme</string>
+    <string name="title_see_all">Ver Todos</string>
+    <string name="featured_in_theaters">Destaque nos cinemas</string>
+    <string name="img_backdrop">Poster do filme</string>
+    <string name="title_similar_movies">Filmes semelhantes</string>
+    <string name="text_minutes_abbreviated">min</string>
+    <string name="text_know_more">Saiba mais em\u0020</string>
+    <string name="section_title_theaters">Agora nos cinemas</string>
+    <string name="section_title_popular">Os mais populares</string>
+    <string name="section_title_top_rated">Os mais votados</string>
+    <string name="section_title_upcoming">Os mais aguardados</string>
+    <string name="section_subtitle_theaters">Em um cinema perto de você</string>
+    <string name="section_subtitle_popular">Não da pra perder</string>
+    <string name="section_subtitle_top_rated">Só filme Top</string>
+    <string name="section_subtitle_upcoming">Tente controlar o hipe</string>
+    <string name="search_hint">Digite o nome do filme</string>
+    <string name="text_clear_history">Deseja realmente limpar o histórico de pesquisas?</string>
+    <string name="title_clear_history">Limpar Histórico</string>
+    <string name="title_trailers">Trailers</string>
+    <string name="img_trailer_description">Imagem de trailer do filme</string>
+    <string name="title_share">Compartilhar</string>
+    <string name="share_with">Compartilhar com</string>
+    <string name="title_reviews">Críticas</string>
+    <string name="title_more">Mais</string>
+    <string name="title_less">Menos</string>
+    <string name="reviewed_by">Crítica por\u0020</string>
+
+</resources>

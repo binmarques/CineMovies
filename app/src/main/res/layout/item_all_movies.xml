@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_8dp"
+    android:layout_marginBottom="@dimen/dimen_8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/cardBackground"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/dimen_8dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <ImageView
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_backdrop_height_medium"
+        android:background="@color/cardBackgroundTwo"
+        android:contentDescription="@string/img_backdrop"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_160dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        app:cardCornerRadius="@dimen/dimen_4dp"
+        app:cardPreventCornerOverlap="false"
+        app:strokeColor="@color/background"
+        app:strokeWidth="0.5dp">
+
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="68dp"
+            android:layout_height="120dp"
+            android:background="@color/cardBackgroundTwo"
+            android:contentDescription="@string/movie_poster" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:id="@+id/containerMovieInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="@dimen/dimen_160dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            tools:text="Avengers: Infinity War" />
+
+        <TextView
+            android:id="@+id/tvVoteAverage"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMovieTitle"
+            android:layout_marginTop="4dp"
+            android:drawableEnd="@drawable/ic_star_14dp"
+            android:drawableRight="@drawable/ic_star_14dp"
+            android:drawablePadding="@dimen/dimen_6dp"
+            android:textColor="@color/background"
+            tools:text="2018 | 4,6" />
+
+        <TextView
+            android:id="@+id/tvSynopsis"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVoteAverage"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/background"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

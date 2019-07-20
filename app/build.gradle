@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "br.com.binmarques.cinemovies"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField('String', 'BASE_URL', '"https://api.themoviedb.org/3/"')
+            buildConfigField('String', 'API_KEY', '"YOUR_API_KEY_HERE"')
+            buildConfigField('String', 'LANGUAGE', '"pt-BR"')
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Android Support Library dependencies
+    implementation "androidx.appcompat:appcompat:$appcompatVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "com.google.android.material:material:$materialVersion"
+    implementation "androidx.cardview:cardview:$cardviewVersion"
+    implementation "androidx.recyclerview:recyclerview:$recyclerviewVersion"
+    implementation "de.hdodenhof:circleimageview:$circleimageviewVersion"
+    implementation "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
+    implementation "org.greenrobot:eventbus:$eventbusVersion"
+
+    //Glide dependencies
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //Butterkinfe dependencies
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+
+    // Retrofit dependencies
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    // RxJava and RxAndroid dependencies
+    implementation "io.reactivex.rxjava2:rxjava:$rxjavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroidVersion"
+
+    // Android Unit Testing dependencies
+    testImplementation "junit:junit:$junitVersion"
+
+    // Runner dependencies
+    androidTestImplementation "androidx.test:runner:$runnerVersion"
+
+    // Espresso dependencies
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
+}
