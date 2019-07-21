@@ -14,7 +14,7 @@ CardView - biblioteca para exibição de cards
 
 RecyclerView - biblioteca para uso do recyclerview para as listas presentes no app
 
-ConstraintLayout - biblioteca para uso de layouts mais ajustáveis e de melhor de desempenho
+ConstraintLayout - biblioteca para uso de layouts mais ajustáveis e de melhor desempenho
 
 CircleImageView - biblioteca para uso de imageview circular no app
 
