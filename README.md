@@ -1,49 +1,54 @@
 # CineMovies
 Projeto desafio que tem por objetivo consumir a API Rest TheMovieDb fazendo uso do padrão de arquitetura MVP e das bibliotecas Retrofit, RxJava para programação reativa, features do Java 8 como expressões lambda, paginação e scroll infinito e mais...
 
-Obs: para utilização e funcionamento do app é necessário uma chave de API, para conseguir a chave é necessário a criação de uma conta em https://www.themoviedb.org/.
+# Como funciona o fonte
+Para utilização e funcionamento do app é necessário uma chave de API, para conseguir a chave é necessário a criação de uma conta em https://www.themoviedb.org/.
 Com a chave em mãos basta baixar ou clonar o app e no arquivo build.gradle a nível de módulo coloque a chave de API no local com o texto: "YOUR_API_KEY_HERE".
 
-Bibliotecas utilizadas: 
+# Telas
 
-Support - biblioteca de suporte a versão mais antigas do Android
+![ScreenShot](https://raw.github.com/{binmarques}/{CineMovies}/{master}/{art})
 
-MaterialComponents - biblioteca de design da google para componentes do material design 
+# Bibliotecas utilizadas 
 
-CardView - biblioteca para exibição de cards
+* Support - biblioteca de suporte a versão mais antigas do Android
 
-RecyclerView - biblioteca para uso do recyclerview para as listas presentes no app
+* MaterialComponents - biblioteca de design da google para componentes do material design 
 
-ConstraintLayout - biblioteca para uso de layouts mais ajustáveis e de melhor desempenho
+* CardView - biblioteca para exibição de cards
 
-CircleImageView - biblioteca para uso de imageview circular no app
+* RecyclerView - biblioteca para uso do recyclerview para as listas presentes no app
 
-ButterKnife - biblioteca responsável pelo bind das views com a classe, diminuindo o boilerplate code
+* ConstraintLayout - biblioteca para uso de layouts mais ajustáveis e de melhor desempenho
 
-Retrofit - biblioteca cliente para as chamadas HTTP no app
+* CircleImageView - biblioteca para uso de imageview circular no app
 
-RXJava - biblioteca de programação reativa no app
+* ButterKnife - biblioteca responsável pelo bind das views com a classe, diminuindo o boilerplate code
 
-Glide - biblioteca de manipulação e armazenamento em cash das imagens presentes no app
+* Retrofit - biblioteca cliente para as chamadas HTTP no app
 
-EventBus - biblioteca usada para simplificar a comunicação entre fragments e activities e manter o estado dos objetos quando o dispositivo é rotacionado
+* RXJava - biblioteca de programação reativa no app
 
-Referências: 
+* Glide - biblioteca de manipulação e armazenamento em cash das imagens presentes no app
 
-Support - https://github.com/guardianproject/android-support-library/
+* EventBus - biblioteca usada para simplificar a comunicação entre fragments e activities e manter o estado dos objetos quando o dispositivo é rotacionado
 
-MaterialComponents - https://github.com/material-components
+# Referências 
 
-CircleImageView - https://github.com/hdodenhof/CircleImageView
+* Support - https://github.com/guardianproject/android-support-library/
 
-ButterKnife - http://jakewharton.github.io/butterknife/
+* MaterialComponents - https://github.com/material-components
 
-ButterKnife - https://github.com/JakeWharton/butterknife
+* CircleImageView - https://github.com/hdodenhof/CircleImageView
 
-Retrofit - https://github.com/square/retrofit
+* ButterKnife - http://jakewharton.github.io/butterknife/
 
-RXJava - https://github.com/ReactiveX/RxJava
+* ButterKnife - https://github.com/JakeWharton/butterknife
 
-Glide - https://github.com/bumptech/glide
+* Retrofit - https://github.com/square/retrofit
 
-EventBus - https://github.com/greenrobot/EventBus
+* RXJava - https://github.com/ReactiveX/RxJava
+
+* Glide - https://github.com/bumptech/glide
+
+* EventBus - https://github.com/greenrobot/EventBus
