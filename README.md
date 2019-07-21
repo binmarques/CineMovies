@@ -7,7 +7,8 @@ Com a chave em m√£os basta baixar ou clonar o app e no arquivo build.gradle a n√
 
 # Telas
 
-![ScreenShot](https://raw.github.com/{binmarques}/{CineMovies}/{master}/{art})
+![ScreenShot](https://raw.github.com/binmarques/CineMovies/master/art/movies.png)
+![ScreenShot](https://raw.github.com/binmarques/CineMovies/master/art/movie_details.png)
 
 # Bibliotecas utilizadas 
 
