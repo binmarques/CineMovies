@@ -26,7 +26,7 @@ RXJava - biblioteca de programação reativa no app
 
 Glide - biblioteca de manipulação e armazenamento em cash das imagens presentes no app
 
-EventBus - biblioteca usada para simplificar a comunicação entre fragments e activities e manter o estado dos objetos quando o dispositivoé rotacionado
+EventBus - biblioteca usada para simplificar a comunicação entre fragments e activities e manter o estado dos objetos quando o dispositivo é rotacionado
 
 Referências: 
 
