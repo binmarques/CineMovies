@@ -9,6 +9,7 @@ Com a chave em m√£os basta baixar ou clonar o app e no arquivo build.gradle a n√
 
 ![ScreenShot](https://raw.github.com/binmarques/CineMovies/master/art/movies.png)
 ![ScreenShot](https://raw.github.com/binmarques/CineMovies/master/art/movie_details.png)
+![ScreenShot](https://raw.github.com/binmarques/CineMovies/master/art/all_movies.png)
 
 # Bibliotecas utilizadas 
 
