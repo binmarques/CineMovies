@@ -1,5 +1,5 @@
 # CineMovies
-Projeto desafio que tem por objetivo consumir a API Rest TheMovieDb fazendo uso do padrão de arquitetura MVP e das bibliotecas Retrofit, RxJava para programação reativa, features do Java 8 como expressões lambda, paginação e scroll infinito e mais...
+Projeto desafio que tem por objetivo consumir a API Rest The Movie Database fazendo uso do padrão de arquitetura MVP e das bibliotecas Retrofit, RxJava para programação reativa, features do Java 8 como expressões lambda, paginação e scroll infinito e mais...
 
 # Como funciona o fonte
 Para utilização e funcionamento do app é necessário uma chave de API, para conseguir a chave é necessário a criação de uma conta em https://www.themoviedb.org/.
