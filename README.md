@@ -14,7 +14,7 @@ Com a chave em mãos basta baixar ou clonar o app e no arquivo build.gradle a n�
 
 # Bibliotecas utilizadas 
 
-* Support - biblioteca de suporte a versão mais antigas do Android
+* Support - biblioteca de suporte a versões mais antigas do Android
 
 * MaterialComponents - biblioteca de design da google para componentes do material design 
 
