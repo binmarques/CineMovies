@@ -40,15 +40,16 @@ dependencies {
     implementation "com.google.android.material:material:$materialVersion"
     implementation "androidx.cardview:cardview:$cardviewVersion"
     implementation "androidx.recyclerview:recyclerview:$recyclerviewVersion"
-    implementation "de.hdodenhof:circleimageview:$circleimageviewVersion"
     implementation "com.google.android.gms:play-services-auth:$playServicesAuthVersion"
+
+    // EventBus dependencies
     implementation "org.greenrobot:eventbus:$eventbusVersion"
 
-    //Glide dependencies
+    // Glide dependencies
     implementation "com.github.bumptech.glide:glide:$glideVersion"
     annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
 
-    //Butterkinfe dependencies
+    // Butterknife dependencies
     implementation "com.jakewharton:butterknife:$butterknifeVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
 

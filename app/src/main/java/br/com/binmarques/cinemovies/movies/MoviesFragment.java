@@ -293,4 +293,5 @@ public class MoviesFragment extends BaseFragment implements RecyclerViewOnItemCl
         startActivity(new Intent(getActivity(),
                 MovieDetailsActivity.class).putExtra(EXTRA_ID, id), options.toBundle());
     }
+
 }

@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85"
         android:backgroundTint="@color/colorAccent"
-        app:rippleColor="?attr/colorControlHighlight"
+        app:rippleColor="@color/colorPrimaryLight"
         app:strokeColor="@color/background"
         app:strokeWidth="1.2dp"
         tools:ignore="UnusedAttribute" />

@@ -18,5 +18,5 @@
     <dimen name="dimen_trailer_card_width">225dp</dimen>
     <dimen name="dimen_trailer_card_height">175dp</dimen>
     <dimen name="dimen_90dp">90dp</dimen>
-    <dimen name="dimen_width_stroke">1.5dp</dimen>
+    <dimen name="dimen_width_stroke">1dp</dimen>
 </resources>

@@ -326,12 +326,10 @@ public class SearchableActivity extends BaseActivity implements SearchableContra
     }
 
     @Override
-    public void onItemClickView(@NonNull View view, int position) {
-    }
+    public void onItemClickView(@NonNull View view, int position) {}
 
     @Override
-    public void onItemLongPressClick(@NonNull View view, int position) {
-    }
+    public void onItemLongPressClick(@NonNull View view, int position) {}
 
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void onMessageEvent(@NonNull AllMoviesEvent event) {
@@ -365,12 +363,12 @@ public class SearchableActivity extends BaseActivity implements SearchableContra
                 .findViewById(androidx.appcompat.R.id.search_close_btn);
 
         mSearchClose.setOnClickListener(v -> {
-                mSearchAutoCompleteTextView.getText().clear();
-                setLastPage(false);
-                mCurrentPage = PAGE_START;
-                mAdapter.clearItems();
-                removeStickEvent();
-                showKeyboard(mSearchAutoCompleteTextView);
+            mSearchAutoCompleteTextView.getText().clear();
+            setLastPage(false);
+            mCurrentPage = PAGE_START;
+            mAdapter.clearItems();
+            removeStickEvent();
+            showKeyboard(mSearchAutoCompleteTextView);
         });
 
         LinearLayout.LayoutParams params = new LinearLayout
@@ -555,13 +553,15 @@ public class SearchableActivity extends BaseActivity implements SearchableContra
     }
 
     public void showKeyboard(EditText editText) {
-        editText.requestFocus();
+        if (!editText.hasFocus()) {
+            editText.requestFocus();
 
-        InputMethodManager imm =
-                (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+            InputMethodManager imm =
+                    (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
 
-        if (imm != null) {
-            imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+            if (imm != null) {
+                imm.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
+            }
         }
     }
 

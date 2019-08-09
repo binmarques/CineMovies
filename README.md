@@ -14,7 +14,7 @@ Com a chave em mãos basta baixar ou clonar o app e no arquivo build.gradle a n�
 
 # Bibliotecas utilizadas 
 
-* Support - biblioteca de suporte a versões mais antigas do Android
+* AppCompat - biblioteca de suporte a versões mais antigas do Android
 
 * MaterialComponents - biblioteca de design da google para componentes do material design 
 
@@ -23,8 +23,6 @@ Com a chave em mãos basta baixar ou clonar o app e no arquivo build.gradle a n�
 * RecyclerView - biblioteca para uso do recyclerview para as listas presentes no app
 
 * ConstraintLayout - biblioteca para uso de layouts mais ajustáveis e de melhor desempenho
-
-* CircleImageView - biblioteca para uso de imageview circular no app
 
 * ButterKnife - biblioteca responsável pelo bind das views com a classe, diminuindo o boilerplate code
 
@@ -38,11 +36,9 @@ Com a chave em mãos basta baixar ou clonar o app e no arquivo build.gradle a n�
 
 # Referências 
 
-* Support - https://github.com/guardianproject/android-support-library/
+* AppCompat - https://github.com/codepath/android_guides/wiki/Migrating-to-the-AppCompat-Library
 
 * MaterialComponents - https://github.com/material-components
-
-* CircleImageView - https://github.com/hdodenhof/CircleImageView
 
 * ButterKnife - http://jakewharton.github.io/butterknife/
 

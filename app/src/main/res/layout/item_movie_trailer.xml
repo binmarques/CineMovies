@@ -17,7 +17,7 @@
         android:clickable="true"
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="6dp"
+        app:cardCornerRadius="10dp"
         app:cardPreventCornerOverlap="false"
         app:strokeColor="@color/background"
         app:strokeWidth="@dimen/dimen_width_stroke">
